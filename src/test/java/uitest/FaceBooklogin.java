@@ -1,5 +1,6 @@
 package uitest;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -28,6 +29,8 @@ public class FaceBooklogin {
 				
 				WebElement LoginBtn = driver.findElement(By.name("login"));
 				LoginBtn.click();
+				List<WebElement> links = driver.findElements(By.tagName("a"));
+				System.out.println("links count"+ links.size());
 	}
-
 }
+

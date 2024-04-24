@@ -56,19 +56,23 @@ public class FBSignUp {
 		Gender.click();
 		
 		
-		List<WebElement> Months = driver.findElements(By.xpath("//select[@id='month']/option"));
-		for(WebElement mon: Months) {
-			System.out.println("Month is " + mon.getText());
+		List<WebElement> months = driver.findElements(By.xpath("//select[@id='month']/option"));
+		for(WebElement mon: months) {
+			System.out.println("Month is " + mon.getText());}
 			
 			List<WebElement> Years = driver.findElements(By.xpath("//select[@id='year']/option"));
 			for(WebElement yer: Years) {
 				System.out.println("Year is " + yer.getText());
 				 }
+			
+			/*WebElement genderText = driver.findElement(By.xpath("//*[@id=\"facebook\"]/body/div[5]/div/div/div/div/div[1]/div//b"));
+			System.out.println("text:" + genderText.getText() );*/
+			
 			driver.close();
          }
          
 	}
-}
+
 
 
 	

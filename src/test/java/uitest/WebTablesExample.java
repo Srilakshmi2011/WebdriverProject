@@ -33,7 +33,7 @@ public class WebTablesExample {
 		
 		String CompanyName = "Island Trading";
 		
-		for(int i=2;i<=Rows.size();i++) {
+		/*for(int i=2;i<=Rows.size();i++) {
 			
 			WebElement Company = driver.findElement(By.xpath("//table[@class='ws-table-all']/tbody/tr[" + i + "]/td[1]"));
 			
@@ -47,12 +47,12 @@ public class WebTablesExample {
 			}
 
 
-		}
+		}*/
 		
 		// Solution -2
 		
-				WebElement Contact1 = driver.findElement(By.xpath("//td[text()='" + CompanyName + " ']/following-sibling::td[1]"));
-				WebElement Country1 = driver.findElement(By.xpath("//td[text()='" + CompanyName + " ']/following-sibling::td[2]"));
+				WebElement Contact1 = driver.findElement(By.xpath("//td[text()='" + CompanyName + "']/following-sibling::td[1]"));
+				WebElement Country1 = driver.findElement(By.xpath("//td[text()='" + CompanyName + "']/following-sibling::td[2]"));
 				System.out.println(Contact1.getText());
 				System.out.println(Country1.getText());
 

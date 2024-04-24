@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-16T02:45:41Z" name="Default suite" finished-at="2024-01-16T02:45:41Z" duration-ms="28">
+  <suite started-at="2024-02-01T23:15:49Z" name=" Sanity Suite" finished-at="2024-02-01T23:15:49Z" duration-ms="26">
     <groups>
       <group name="sanity">
-        <method signature="LoanTest.TC00_PersonalLoanTest()[pri:0, instance:testng.LoanTest@38604b81]" name="TC00_PersonalLoanTest" class="testng.LoanTest"/>
+        <method signature="CardTest.TC01_CreditCardTest()[pri:0, instance:testng.CardTest@44d52de2]" name="TC01_CreditCardTest" class="testng.CardTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-01-16T02:45:41Z" name="Default test" finished-at="2024-01-16T02:45:41Z" duration-ms="28">
+    <test started-at="2024-02-01T23:15:49Z" name="Test" finished-at="2024-02-01T23:15:49Z" duration-ms="26">
+      <class name="testng.CardTest">
+        <test-method signature="TC01_CreditCardTest()[pri:0, instance:testng.CardTest@44d52de2]" started-at="2024-02-01T23:15:49Z" name="TC01_CreditCardTest" finished-at="2024-02-01T23:15:49Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_CreditCardTest -->
+      </class> <!-- testng.CardTest -->
       <class name="testng.LoanTest">
-        <test-method is-config="true" signature="Method3()[pri:0, instance:testng.LoanTest@38604b81]" started-at="2024-01-16T02:45:41Z" name="Method3" finished-at="2024-01-16T02:45:41Z" duration-ms="10" status="PASS">
+        <test-method signature="TC01_HomeLoanTest()[pri:0, instance:testng.LoanTest@95e33cc]" started-at="2024-02-01T23:15:49Z" name="TC01_HomeLoanTest" finished-at="2024-02-01T23:15:49Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Method3 -->
-        <test-method signature="TC00_PersonalLoanTest()[pri:0, instance:testng.LoanTest@38604b81]" started-at="2024-01-16T02:45:41Z" name="TC00_PersonalLoanTest" finished-at="2024-01-16T02:45:41Z" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC00_PersonalLoanTest -->
-        <test-method is-config="true" signature="Method2()[pri:0, instance:testng.LoanTest@38604b81]" started-at="2024-01-16T02:45:41Z" name="Method2" finished-at="2024-01-16T02:45:41Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Method2 -->
-        <test-method is-config="true" signature="Method4()[pri:0, instance:testng.LoanTest@38604b81]" started-at="2024-01-16T02:45:41Z" name="Method4" finished-at="2024-01-16T02:45:41Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Method4 -->
+        </test-method> <!-- TC01_HomeLoanTest -->
       </class> <!-- testng.LoanTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!--  Sanity Suite -->
 </testng-results>

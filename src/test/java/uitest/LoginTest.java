@@ -25,10 +25,10 @@ public class LoginTest {
 				loginLink.click();
 				
 				WebElement UserName =  driver.findElement(By.name("user_login"));
-				UserName.sendKeys("abc@xyz.com");
+				UserName.sendKeys("abc@yyz.com");
 				
 				WebElement Password = driver.findElement(By.id("password"));
-				Password .sendKeys("Abc@12345");
+				Password .sendKeys("abc@12345");
 				
 				WebElement RememberMe = driver.findElement(By.id("remember-me"));
 				RememberMe.click();
@@ -43,10 +43,6 @@ public class LoginTest {
 
 
 
-
-
-
-
-	}
+}
 
 }
